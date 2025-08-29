@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joruri seba</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-green-100 h-full w-full">
+    <!--Navbar-->
+
+    <nav class="Navbar flex justify-between h-[100px] bg-white">
+      <div class="Navbar-left flex w-[195.72px] h-[50px] m-5">
+        <img src="assets/logo.png" class="mt-2 mr-1" alt="" />
+        <h1 class="text-xl font-bold text-[#00A63E]">Emergency<br />Service</h1>
+      </div>
+      <div class="Navbar-right m-5">
+        <button class="btn rounded-full bg-[#41b0ff25]">
+          <span id="redHart">0</span>
+          <img src="assets/heart.png" class="h-5 w-5" alt="" />
+        </button>
+        <button class="btn rounded-full bg-[#41b0ff25]">
+          <span id="coin"> 100 </span>
+          <img src="assets/coin.png" class="h-5 w-5" alt="" />
+        </button>
+        <button class="btn rounded-full bg-[#00A63E]">2 copy</button>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div
+      class="Hero Section h-[239px] flex flex-col justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
+    >
+      <img
+        src="assets/logo-dark.png"
+        class="h-[92px] w-[92px] text-items-center"
+        alt=""
+      />
+      <h1 class="text-white font-bold text-[40px]">
+        Emergency Service Directory
+      </h1>
+      <p class="text-white font-semibold text[20px]">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+    <!--Main Section Left-->
+    <div class="main-div p-[50px] flex gap-4 w-full">
+      <div class="Card Section w-3/4 grid grid-cols-3 gap-4">
+        <!--card 1-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">National Emergency Number</h1>
+            <p class="text-start font-normal text-gray-500">
+              National Emergency
+            </p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">999</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-10">
+              All
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="National Emergency Number"
+              data-number="999"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 2-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/police.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Police Helpline Number</h1>
+            <p class="text-start font-normal text-gray-500">Police</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">999</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-16">
+              Police
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Police Helpline Number"
+              data-number="999"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 3-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/fire-service.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Fire Service Number</h1>
+            <p class="text-start font-normal text-gray-500">Fire Service</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">999</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-13">
+              Fire
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Fire Service Number"
+              data-number="999"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 4-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/ambulance.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Ambulance Service</h1>
+            <p class="text-start font-normal text-gray-500">Ambulance</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">1994-999999</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-18">
+              Health
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Ambulance Service"
+              data-number="1994-999999"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 5-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Women & Child Helpline</h1>
+            <p class="text-start font-normal text-gray-500">
+              Women & Child Helpline
+            </p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">109</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-14">
+              Help
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Women & Child Helpline"
+              data-number="109"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 6-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
+            <p class="text-start font-normal text-gray-500">Anti-Corruption</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">106</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-13">
+              Govt.
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Anti-Corruption Helpline"
+              data-number="106"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 7-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Electricity Helpline</h1>
+            <p class="text-start font-normal text-gray-500">
+              Electricity Outage
+            </p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">16216</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-22">
+              Electricity
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Electricity Helpline"
+              data-number="16216"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 8-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Brac Helpline</h1>
+            <p class="text-start font-normal text-gray-500">Brac</p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">16445</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-14">
+              NGO
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Brac Helpline"
+              data-number="16445"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+        <!--card 9-->
+        <div
+          class="callParent Card Section-1 p-[32px] shadow-2xl bg-white rounded-xl flex flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div
+              class="h-[60px] w-[60px] rounded-lg bg-red-300 flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="size-9" alt="" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button
+                class="hartAction btn btn-square border-none shadow-none bg-white w-[20px] h-[18px]"
+              >
+                <img src="assets/heart_11679828.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
+            <p class="text-start font-normal text-gray-500">
+              Bangladesh Railway
+            </p>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">163</h1>
+            <button class="text-18 font-normal bg-slate-200 rounded-full w-15">
+              Travel
+            </button>
+          </div>
+
+          <div class="mt-8 w-full flex justify-between gap-2">
+            <button
+              class="w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="assets/icons8-copy-24.png" alt="" />
+              Copy
+            </button>
+            <button
+              class="callAction  bg-[#00A63E] hover:bg-green-900 text-white w-1/2 h-10 border-1 rounded-lg flex justify-center items-center gap-2"
+              data-title="Bangladesh Railway Helpline"
+              data-number="163"
+            >
+              <i class="fa fa-phone"></i>
+              Call
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Main Section right-->
+      <div class="right-div w-1/4 bg-white">
+        <div class="flex justify-between items-center p-2 h-[52px]">
+          <div class="flex gap-2">
+            <img src="assets/clock.png" class="h-4 w-4 mt-1" alt="" />
+            <h1>Call History</h1>
+          </div>
+          <button
+            class="bg-[#00A63E] rounded-full h-[35px] w-[70px] text-white"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <!--1 no-->
+          <div
+            class="flex justify-between items-center bg-slate-100 p-2 rounded-2xl"
+          >
+            <div>
+              <h1>Fire Service Number</h1>
+              <p>999</p>
+            </div>
+            <div>
+              <p>11:36:58 AM</p>
+            </div>
+          </div>
+          <!--2 no-->
+          <div
+            class="flex justify-between items-center bg-slate-100 p-2 rounded-2xl"
+          >
+            <div>
+              <h1>National Emergency Number</h1>
+              <p>999</p>
+            </div>
+            <div>
+              <p>11:36:58 AM</p>
+            </div>
+          </div>
+          <!--3 no-->
+          <div
+            class="flex justify-between items-center bg-slate-100 p-2 rounded-2xl"
+          >
+            <div>
+              <h1>Fire Service Number</h1>
+              <p>999</p>
+            </div>
+            <div>
+              <p>11:36:58 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
