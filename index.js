@@ -29,7 +29,7 @@ call.forEach(btn => {
         else {
             alert("🚫You haven't 20 coin  so, you can't call please try again")
         }
-        console.log(callList);
+
     });
 });
 
@@ -61,8 +61,16 @@ document.querySelector(".right-div button").addEventListener("click", () => {
 
 const countCopy = document.getElementById("copyButton");
 const copyButton = document.querySelectorAll(".copy_button");
-copyButton.forEach(hart => {
-    hart.addEventListener("click", function () {
-       countCopy.innerHTML = Number(countCopy.innerHTML) + 1;
+copyButton.forEach(copy => {
+    copy.addEventListener("click", function () {
+        const number = copy.dataset.number;
+
+        alert(`this number is copied ${number}`)
+        navigator.clipboard.writeText(number)
+
+        countCopy.innerHTML = Number(countCopy.innerHTML) + 1;
+
+
     });
 });
+
